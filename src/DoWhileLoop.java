@@ -7,6 +7,6 @@ public class DoWhileLoop {
             System.out.print("value of x : " + x );
             x++;
             System.out.print("\n");
-        }while( x < 10 );
+        }while( x < 1 );
     }
 }

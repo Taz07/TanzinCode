@@ -1,47 +1,29 @@
-import java.util.Scanner;
 
-public class Character {
+
+public class TempCal {
     public static void main(String[] args) {
 
+        double f;
+        double c;
+        int choice = 1;
+        double celsiusToFahrenheit;
+        double fahrenheitToCelsius;
+        double temp = 23;
+
+
+
+        if (choice == 1) {
+            celsiusToFahrenheit = (temp * 9 / 5) + 32;
+            System.out.println("c + converting to farenheit is equal to " + celsiusToFahrenheit + "F");
+        } else if (choice == 2) {
+            fahrenheitToCelsius = (temp - 31) * 5 / 9;
+            System.out.println("f + converting to celsius is equal to " + fahrenheitToCelsius + "C");
+        } else {
+            System.out.println("Invalid number, try again");
+        }
     }
-        public int getTemperatureCelsius(){
-
-            return 0;
-        }
-
-        public int getTemperatureFahrenheit(){
-
-            return 0;
-        }
-        public void run () {
+    }
 
 
-            double f;
-            double c;
-            int choice;
-            double celsiusToFahrenheit;
-            double fahrenheitToCelsius;
-
-            Scanner keyboard = new Scanner(System.in);
-
-            //do {
-                System.out.println("1. Convert celsius to farenheit");
-                System.out.println("2. convert farenheit to celsius");
-
-                choice = keyboard.nextInt();
-
-                if (choice == 1) {
-                    c = getTemperatureCelsius();
-                    celsiusToFahrenheit = (c * 9 / 5) + 32;
-                    System.out.println("c + converting to farenheit is equal to " + celsiusToFahrenheit + "F");
-                } else if (choice == 2) {
-                    f = getTemperatureFahrenheit();
-                    fahrenheitToCelsius = (f - 31) * 5 / 9;
-                    System.out.println("f + converting to celsius is equal to " + fahrenheitToCelsius + "C");
-                } else {
-                    System.out.println("Invalid number, try again");
-                }
-            }
-        }
 
 
