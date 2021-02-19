@@ -5,10 +5,10 @@ public class TempCal {
 
         double f;
         double c;
-        int choice = 1;
+        int choice = 2;
         double celsiusToFahrenheit;
         double fahrenheitToCelsius;
-        double temp = 23;
+        double temp = 100;
 
 
 
