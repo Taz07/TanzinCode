@@ -1,0 +1,40 @@
+package ActionFunctionTesting;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+    public class MouseHover {
+
+        public static void main(String[] args) throws InterruptedException {
+
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver");
+
+            WebDriver driver = new ChromeDriver();
+
+            driver.manage().window().maximize();
+
+            driver.get("https://www.browserstack.com/");
+
+            ((JavascriptExecutor) driver).executeScript("scroll(0,300)");
+
+            Actions ac = new Actions(driver);
+
+            WebElement live = driver.findElement(By.cssSelector("div.product-cards-wrapper--click a[title='Live']"));
+            ac.moveToElement(live).build().perform();
+
+            Thread.sleep(3000);
+
+            WebElement automate = driver.findElement(By.cssSelector("div.product-cards-wrapper--click a[title='App Automate']"));
+            automate.click();
+
+            Thread.sleep(3000);
+
+            driver.quit();
+
+    }
+
+}
