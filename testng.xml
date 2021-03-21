@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/tanzin/IdeaProjects/Automation/src/main/java">
+        <classes>
+            <class name="SeleniumPractice.AppTest">
+                <methods>
+                    <include name="guru99tutorials"/>
+                </methods>
+            </class>
+            <class name="SeleniumPractice.AppTest2">
+                <methods>
+                    <include name="guru99tutorials"/>
+                </methods>
+            </class>
+            <class name="SeleniumPractice.AppTest3">
+                <methods>
+                    <include name="guru99tutorials"/>
+                </methods>
+            </class>
+            <class name="TestNG.MoMediaTestNG">
+                <methods>
+                    <include name="movieSearchTest"/>
+                    <include name="contactUsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
